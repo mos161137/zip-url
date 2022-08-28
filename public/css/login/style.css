@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+h2 span:nth-child(3){
+    color: #21BDA1;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+h2{
+    font-size: 6em;
+    text-align: center;
+}
+small{
+    font-size: 0.5em !important;
+}
+.text-right{
+    text-align: right;
+}
+a{
+    color: #21BDA1 !important;
+}
+h2 span{
+    font-size: 80px;
+    position: relative;
+    display: inline-flex;
+    color: #21BDA1;
+    font-weight: 300;
+}
+.btn-bs{
+    background: #21BDA1;
+    color: #fff;
+    font-weight: 300;
+    border: none;
+    font-size:0.7em;
+    padding: 0.3em;
+    border-radius: 5px;
+}
+.btn-bs:hover{
+    background: #127e6a;
+}
+h2 span:nth-child(odd){
+    color: #414141;
+    line-height: 1.2em;
+    letter-spacing: -1em;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+h2:hover span:nth-child(odd){
+    letter-spacing: 0;
+}
+h2:hover span:nth-child(odd)::after{
+    content: '';
+}
+h2 span:nth-child(1){
+    margin-right: 10px;
+}
+h2 span:nth-child(1)::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    font-size: 0.35em;
+}
+h2 i{
+    position: absolute;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: #777;
+    font-weight: 200;
+    font-style: initial;
+    line-height: 1em;
+}
+h2 i::before{
+    padding-left: 5px;
+    content: '';
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    display: initial;
+    transition: 0.5s;
+}
+h2:hover i::before{
+    opacity: 0;
+    letter-spacing: 2em;
+}
+h2 i::after{
+    content: '';
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+h2:hover i::after{
+    opacity: 1;
+    visibility: visible;
+
+}
+
+
+.menu-data{
+    width: 50%;
+}
+@media (min-width: 400px) and (max-width: 1025px) {
+    .menu-data{
+        width: 90%;
+    }
+    .form-control{
+        font-size: 1em !important;
+    }
+    .btn-primary{
+        font-size: 1em !important;
+
+    }
+}
+@media (min-width: 200px) and (max-width: 399px) {
+    .menu-data{
+        width: 90%;
+    }
+    h2 i::before {
+        padding-left: 0;
+        width: 100%;
+    }
+    form{
+        padding-top: 1em;
+    }
+    h2 span {
+        font-size: 50px;
+    }
+    h2 i {
+        font-size: 25px;
+        line-height: 2em;
+    }
+
+}
